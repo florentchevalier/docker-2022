@@ -8,7 +8,6 @@
 # Travaux
 
 ## Prise en main des commandes
-
 > Récupérer l'image nginx
 ```
 docker pull nginx
@@ -36,6 +35,7 @@ docker run -d nginx
 docker ps
 ```
 
+## Publication de port
 > Trouver la documentation de l'image nginx sur https://hub.docker.com/
 
 *La documentation de l'image nginx precise que par default le service nginx ecoute sur le port 80*
@@ -77,6 +77,7 @@ ou via l'apercu web de cloudshell (en haut à droite)
 docker stop <CONTAINER ID>
 ```
 
+## Container nommé
 > Création et lancement d'un container nommé explicitement
 ```
 docker run -d -p 8080:80 --name mon_nginx nginx
@@ -106,11 +107,11 @@ docker container prune
 docker container list -a
 ```
 
-*Dans le cas du lancement container nommé explicitement, si il existe déjà un container correspondant au nom, c'est ce container qui est réutilisé...*
+*Dans le cas du lancement d'un container nommé explicitement, si il existe déjà un container correspondant au nom, c'est ce container qui est réutilisé...*
 
 *Les containers ne sont pas immutable et peuvent évoluer au cours de leur cycle de vie (fichiers temporaires, logs...)*
 
-*On souhaite donc toujours se baser sur des images immutable que sur des containers pour avoir des comportements idempotent*
+*On souhaite donc toujours se baser sur des images immutables que sur des containers pour avoir des comportements idempotents*
 
 > Création et lancement d'un container nommé explicitement avec l'option --rm
 ```
@@ -125,5 +126,5 @@ docker container list -a
 
 ## En conclusion
 * Il vaut mieux nommer ses containers
-* On va préféré se basé sur une image pour reconstruire un nouveau container à chaque fois
+* On va préférer se baser sur une image pour reconstruire un nouveau container à chaque fois
 
