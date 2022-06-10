@@ -1,0 +1,11 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "ma_bdd_2",
+            "Group": "Servers",
+            "Host": "ma_bdd",
+            "Port": 5432,
+            "Username": "postgres"
+        }
+    }
+}

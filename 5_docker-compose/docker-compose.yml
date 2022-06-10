@@ -1,0 +1,22 @@
+version: "2.4"
+services:
+  ma_bdd:
+    image: "postgres:14-bullseye"
+    environment:
+      POSTGRES_PASSWORD: dinumDocker2022
+    networks:
+      - mon_reseau
+  pgadmin:
+    image: "dpage/pgadmin4"
+    ports:
+      - "8080:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: dinum.sin.agents@gouv.nc
+      PGADMIN_DEFAULT_PASSWORD: F0rmation
+    volumes:
+      - ./pgadmin4/servers.json:/pgadmin4/servers.json
+    networks:
+      - mon_reseau
+
+networks:
+  mon_reseau: {}

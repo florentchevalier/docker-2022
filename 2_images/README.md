@@ -59,6 +59,7 @@ cacaview /usr/share/nginx/html/cat.jpg
 ```
 
 > Sortir de la visualisation `q` 
+
 > Ctrl + D pour sortir du container
 
 > Arrêter le container
