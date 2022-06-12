@@ -1,11 +1,13 @@
 {
     "Servers": {
         "1": {
-            "Name": "ma_bdd_2",
+            "Name": "ma_bdd",
             "Group": "Servers",
             "Host": "ma_bdd",
             "Port": 5432,
-            "Username": "postgres"
+            "MaintenanceDB": "postgres",
+            "Username": "postgres",
+            "SSLMode": "prefer"
         }
     }
 }

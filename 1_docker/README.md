@@ -23,7 +23,7 @@ docker image list
 docker run nginx
 ```
 
-> Ctrl + C pour interrompre process
+> Ctrl + C pour interrompre le process
 
 > Relancer le container en mode detaché
 ```
