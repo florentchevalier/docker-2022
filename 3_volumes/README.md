@@ -17,6 +17,8 @@ via l'apercu web de cloudshell (en haut à droite)
 
 > Recharger la page pour voir apparaitre la modification sans avoir à relancer le container
 
+> Ctrl + C pour interrompre le process
+
 ## Variable d'environnement
 > Lancer un container basé sur l'image postgres:14-bullseye
 ```

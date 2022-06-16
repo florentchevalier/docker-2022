@@ -33,7 +33,7 @@ docker container inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{e
 * Dans l'onglet `General`
   * Name : `ma-bdd`
 * Dans l'onglet `connection`
-  * Host name/address : <IP du container ma_bdd>
+  * Host name/address : **IP du container ma_bdd**
   * Username : `postgres`
   * Password : `dinumDocker2022`
 * `Save`

@@ -8,6 +8,11 @@
 # Travaux
 
 ## Prise en main des commandes
+> Afficher l'aide
+```
+docker --help
+```
+
 > Récupérer l'image nginx
 ```
 docker pull nginx
@@ -34,6 +39,8 @@ docker run -d nginx
 ```
 docker ps
 ```
+
+*Le container a été nommé aléatoirement (voir dernière colonne)*
 
 ## Publication de port
 > Trouver la documentation de l'image nginx sur https://hub.docker.com/
